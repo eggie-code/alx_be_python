@@ -1,5 +1,5 @@
 #user gives their age
-current_age = int(input("age:"))
+current_age = int(input("How old are you?:"))
 
 #calculate users age in 2050
 age_in_2050 = current_age + 27
