@@ -6,7 +6,7 @@ Time = 3
 
 interest = Principal * Rate * Time
 
-print(interest)
+print(f"The simple interest is: {interest}")
 
 
 
