@@ -1,3 +1,4 @@
+# time
 hours = 2
 
 # calculate hours to seconds
