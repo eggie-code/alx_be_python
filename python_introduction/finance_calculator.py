@@ -1,4 +1,3 @@
-
 # monthly income
 monthly_income = int(input("Enter your monthly income:"))
 
