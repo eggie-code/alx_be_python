@@ -1,11 +1,11 @@
 number1 = 10
 number2 = 5
 
-#addition
+# addition
 print(number1 + number2)
 
-#subtraction
+# subtraction
 print(number1 - number2)
 
-#multiplication
+# multiplication
 print(number1 * number2)
