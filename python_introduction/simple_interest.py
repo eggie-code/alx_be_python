@@ -1,4 +1,3 @@
-
 Principal = 1000
 
 Rate = 0.05
