@@ -1,12 +1,13 @@
 # Prompt the user for task description
 task = input("Please enter the task description: ")
 
-# Prompt for the task's priority
-priority = input("Enter the task's priority (high, medium, low): ").lower()
-
 # Prompt to check if the task is time-bound
-time_bound_input = input("Is this task time-bound? (yes/no): ").lower()
+time_bound_input = input("Is this task time-bound? (yes/no): ")
 time_bound = True if time_bound_input == 'yes' else False
+
+# Prompt for the task's priority
+priority = input("Enter the task's priority (high, medium, low): ")
+
 
 # Process based on priority using match-case
 match priority:
