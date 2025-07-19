@@ -15,7 +15,7 @@ match priority:
     case "medium":
         reminder_message = f"'{task}' is a medium priority task"
     case "low":
-        reminder_message = f"'{task}' is a low priority task."
+        note_message = f"'{task}' is a low priority task."
     case _:
         reminder_message = f"'{task}' has an unspecified priority"
 
@@ -26,9 +26,12 @@ if time_bound == "yes":
     else:
         reminder_message += " that you should aim to complete today."
 elif time_bound == "no" and priority == "low":
-    reminder_message += " Consider completing it when you have free time."
+    note_message += " Consider completing it when you have free time."
 elif time_bound == "no":
     reminder_message += "."
 
 # Provide a Customized Reminder
-print(f"Reminder: {reminder_message}")
+if priority in ["high", "medium"]:
+    print(f"Reminder: {reminder_message}")
+else:
+    print(f"Note:{note_message}")
