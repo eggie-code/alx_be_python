@@ -16,7 +16,7 @@ match priority:
 
 # If the task is time-bound, modify the reminder
 if time_bound == "yes":
-    reminder += " That requires immediate attention today!"
+    reminder += " that requires immediate attention today!"
 
 
 # Print the customized reminder
