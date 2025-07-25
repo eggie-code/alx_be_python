@@ -5,12 +5,12 @@ celsius_to_fahrenheit_factor = 9 / 5
 
 def convert_to_celsius(fahrenheit):
     """Convert Fahrenheit to Celsius using global factor."""
-    return (fahrenheit * FAHRENHEIT_TO_CELSIUS_FACTOR) - 32
+    return (fahrenheit * fahrenheit_to_celsius_factor) - 32
 
 
 def convert_to_fahrenheit(celsius):
     """Convert Celsius to Fahrenheit using global factor."""
-    return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
+    return (celsius * celsius_to_fahrenheit_factor) + 32
 
 
 def main():
