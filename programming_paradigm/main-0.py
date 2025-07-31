@@ -24,7 +24,7 @@ def main():
     elif command == "display":
         account.display_balance()
     else:
-        print(f"Current balance: ${amount}")
+        print(f"Current Balance: ${amount}")
 
 
 if __name__ == "__main__":
