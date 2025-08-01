@@ -29,7 +29,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.add(0, 0), 0)
 
     # subtraction tests
-    def test_subtract_positive_numbers(self):
+    def test_subtraction(self):
         """Test subtraction of two positive numbers."""
         self.assertEqual(self.calc.subtract(5, 3), 2)
 
@@ -50,7 +50,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.subtract(0, 0), 0)
 
     # multiplication tests
-    def test_multiply_positive_numbers(self):
+    def test_multiply(self):
         """Test multiplication of two positive numbers."""
         self.assertEqual(self.calc.multiply(5, 3), 15)
 
@@ -69,3 +69,20 @@ class TestSimpleCalculator(unittest.TestCase):
     def test_multiply_zero_with_zero(self):
         """Test multiplication of zero with zero."""
         self.assertEqual(self.calc.multiply(0, 0), 0)
+
+    # division tests
+    def test_divide(self):
+        """Test division of two positive numbers."""
+        self.assertEqual(self.calc.divide(6, 3), 2)
+
+    def test_divide_negative_numbers(self):
+        """Test division of two negative numbers."""
+        self.assertEqual(self.calc.divide(-6, -3), 2)
+
+    def test_divide_mixed_numbers(self):
+        """Test division of a positive and a negative number."""
+        self.assertEqual(self.calc.divide(6, -3), -2)
+
+    def test_divide_zero(self):
+        """Test division of zero by a number."""
+        self.assertEqual(self.calc.divide(0, 5), 0)
