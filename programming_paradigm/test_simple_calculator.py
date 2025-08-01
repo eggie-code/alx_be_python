@@ -11,27 +11,27 @@ class TestSimpleCalculator(unittest.TestCase):
     def test_addition_positive_numbers(self):
         """Test addition of two positive numbers."""
         result = self.calculator.add(5, 3)
-        self.assertEqual(result, 8)
+        self.assertEqual(self.calculator.add(5, 3), 8)
 
     def test_addition_negative_numbers(self):
         """Test addition of two negative numbers."""
         result = self.calculator.add(-5, -3)
-        self.assertEqual(result, -8)
+        self.assertEqual(self.calculator.add(-5, -3), -8)
 
     def test_addition_mixed_numbers(self):
         """Test addition of a positive and a negative number."""
         result = self.calculator.add(5, -3)
-        self.assertEqual(result, 2)
+        self.assertEqual(self.calculator.add(5, -3), 2)
 
     def test_addition_zero(self):
         """Test addition of zero to a number."""
         result = self.calculator.add(0, 5)
-        self.assertEqual(result, 5)
+        self.assertEqual(self.calculator.add(0, 5), 5)
 
     def test_addition_zero_to_zero(self):
         """Test addition of zero to zero."""
         result = self.calculator.add(0, 0)
-        self.assertEqual(result, 0)
+        self.assertEqual(self.calculator.add(0, 0), 0)
 
     # subtraction tests
     def test_subtract_positive_numbers(self):
