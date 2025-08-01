@@ -50,23 +50,23 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.subtract(0, 0), 0)
 
     # multiplication tests
-    def test_multiply(self):
+    def test_multiplication(self):
         """Test multiplication of two positive numbers."""
         self.assertEqual(self.calc.multiply(5, 3), 15)
 
-    def test_multiply_negative_numbers(self):
+    def test_multiplication_negative_numbers(self):
         """Test multiplication of two negative numbers."""
         self.assertEqual(self.calc.multiply(-5, -3), 15)
 
-    def test_multiply_mixed_numbers(self):
+    def test_multiplication_mixed_numbers(self):
         """Test multiplication of a positive and a negative number."""
         self.assertEqual(self.calc.multiply(5, -3), -15)
 
-    def test_multiply_zero(self):
+    def test_multiplication_zero(self):
         """Test multiplication of zero with a number."""
         self.assertEqual(self.calc.multiply(5, 0), 0)
 
-    def test_multiply_zero_with_zero(self):
+    def test_multiplication_zero_with_zero(self):
         """Test multiplication of zero with zero."""
         self.assertEqual(self.calc.multiply(0, 0), 0)
 
