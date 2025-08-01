@@ -19,7 +19,7 @@ class book:
         return False
 
 
-class library:
+class Library:
     def __init__(self):
         self.books = []
 
