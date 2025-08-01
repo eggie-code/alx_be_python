@@ -42,7 +42,7 @@ class Library:
 
     def return_book(self, title):
         """Return a book by title."""
-        for book in self._books:
+        for book in self.books:
             if book.title == title:
                 book.return_book()
                 print(f"Returned '{book.title}'.")
