@@ -71,18 +71,18 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(0, 0), 0)
 
     # division tests
-    def test_divide(self):
+    def test_division(self):
         """Test division of two positive numbers."""
         self.assertEqual(self.calc.divide(6, 3), 2)
 
-    def test_divide_negative_numbers(self):
+    def test_division_negative_numbers(self):
         """Test division of two negative numbers."""
         self.assertEqual(self.calc.divide(-6, -3), 2)
 
-    def test_divide_mixed_numbers(self):
+    def test_division_mixed_numbers(self):
         """Test division of a positive and a negative number."""
         self.assertEqual(self.calc.divide(6, -3), -2)
 
-    def test_divide_zero(self):
+    def test_division_zero(self):
         """Test division of zero by a number."""
         self.assertEqual(self.calc.divide(0, 5), 0)
