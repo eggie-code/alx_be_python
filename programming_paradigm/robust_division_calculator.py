@@ -15,6 +15,6 @@ def safe_divide(numerator, denominator):
         result = float(numerator) / float(denominator)
         return f"the result of the division is {result}"
     except ZeroDivisionError:
-        return "Error: Cannot divide by zero"
+        return "Error: Cannot divide by zero."
     except (ValueError, TypeError):
         return "Error: Please enter numeric values only."
