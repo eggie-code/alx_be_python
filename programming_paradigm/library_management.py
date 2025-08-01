@@ -21,11 +21,11 @@ class Book:
 
 class Library:
     def __init__(self):
-        self.books = []
+        self._books = []
 
     def add_book(self, book):
         """Add a book to the library."""
-        self.books.append(book)
+        self._books.append(book)
 
     def check_out_book(self, title):
         """Check out a book by title."""
@@ -42,7 +42,7 @@ class Library:
 
     def return_book(self, title):
         """Return a book by title."""
-        for book in self.books:
+        for book in self._books:
             if book.title == title:
                 book.return_book()
                 print(f"Returned '{book.title}'.")
