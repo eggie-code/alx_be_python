@@ -1,5 +1,5 @@
-class Book:  # creatingb an instance of book
-    def_init_(self, title, author, year):
+class Book:  # creating an instance of book
+    def __init__(self, title, author, year):
         self.title = title
         self.author = author
         self.year = year
